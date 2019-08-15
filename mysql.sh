@@ -190,7 +190,7 @@ main(){
   install_docker_compace
   config_docker
   deploy
-  echo "mysql已经安装完毕，请登录相关服务器验收！"
+  echo "已经安装完毕，请登录相关服务器验收！"
 
 }
 main
