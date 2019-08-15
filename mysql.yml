@@ -1,0 +1,20 @@
+version: '2'
+
+services:
+  mysql:
+    image: mysql:5.7
+    container_name: mysql
+    network_mode: "host"
+    environment:
+      MYSQL_USER: glpi
+      MYSQL_DATABASE: glpi
+      MYSQL_PASSWORD: root1234 
+      MYSQL_ROOT_PASSWORD: root1234
+    volumes:
+    - /opt/mysql-data:/var/lib/mysql
+    - /etc/localtime:/etc/localtime:ro
+    ports:
+    - 3307:3306/tcp
+    restart: always
+
+    
